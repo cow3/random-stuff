@@ -1728,30 +1728,3 @@ def isAbelianSubgroup(G,H):
                 return False
     return True
 
-def textTut():
-	print("making a file")
-	print("variable_name=open(name of file including extension,'w+')")
-	print("variable_name.write(put text here) backslash n for new line")
-	print("variable_name.close()  text won't appear until this line is run")
-	print("adding to a file")
-	print("variable_name=open(name of file including extension,'a')")
-	print("variable_name.write(put text here")
-	print("variable_name.close()  text won't appear until this line is run")
-	print("reading a file")
-	print("variable_name=open(name of file including extension,'r')")
-	print("variable_name.readlines() returns list of strings")
-
-def listToFile(name,L):
-	file=open(name,"w+")
-	for i in L:
-		file.write(str(i)+"\n")
-	file.close()
-		
-def fileToList(name):
-	file=open(name,"r")
-	L=file.readlines()
-	for i in range(len(L)):
-		L[i]=L[i][:-1]
-	return L
-
-
